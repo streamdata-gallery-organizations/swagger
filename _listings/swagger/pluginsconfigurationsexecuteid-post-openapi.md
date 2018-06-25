@@ -1,10 +1,11 @@
 ---
 swagger: "2.0"
 x-collection-name: Swagger
-x-complete: 1
+x-complete: 0
 info:
-  title: Swagger Hub Registry
-  description: the-registry-api-for-swaggerhub
+  title: Swagger Hub Registry triggers execution of plugin configuration identified
+    by id
+  description: Triggers execution of plugin configuration identified by id.
   contact:
     name: SwaggerHub
     url: http://swaggerhub.com
@@ -1886,42 +1887,17 @@ paths:
       - Configurations
       - Execute
       - Id
-  /plugins/configurations/schema:
-    post:
-      summary: get configuration schema for the provided Plugin configuration
-      description: Get configuration schema for the provided plugin configuration.
-      operationId: buildConfigurationSchema
-      x-api-path-slug: pluginsconfigurationsschema-post
-      parameters:
-      - in: body
-        name: pluginConfiguration
-        description: the Plugin configuration to be added or updated
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Plugins
-      - Configurations
-      - Schema
-  /token:
-    post:
-      summary: Retrieves an API token valid for the user identified by user object
-        in body
-      description: Retrieves an api token valid for the user identified by user object
-        in body.
-      operationId: getApiTokenByCredentials
-      x-api-path-slug: token-post
-      parameters:
-      - in: body
-        name: user
-        description: user credentials
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Token
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---
