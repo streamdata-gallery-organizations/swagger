@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1684-swagg
 x-kinRank: "8"
 x-alexaRank: "23531"
 tags: Swagger
-created: "2018-08-27"
-modified: "2018-08-27"
+created: "2018-08-31"
+modified: "2018-08-31"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/swagger/master/_listings/swagger/apis.md
 specificationVersion: "0.14"
 apis:
